@@ -1,4 +1,4 @@
-// Here is the first promise.
+// Here is the first primise.
 
 function resolvePromise() {
   return Promise.resolve("Success").then(function(value) {
