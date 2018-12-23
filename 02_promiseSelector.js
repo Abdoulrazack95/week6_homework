@@ -1,15 +1,13 @@
 // Second promise
 
-function secondFunction(boolean) {
-  if (boolean === true) {
-    return Promise.resolve("Succes").then(function(value) {
-      console.log(value);
-    });
-  } else {
-    return Promise.reject("Failure").catch(function(value) {
-      console.log(value);
-    });
-  }
-}
+var boolean = true;
 
-secondFunction(true);
+var success = new Promise(function(resolve, reject) {
+  if (boolean) {
+    resolve("success");
+  } else {
+    reject("Failure");
+  }
+});
+
+console.log(success);
