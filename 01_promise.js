@@ -7,3 +7,9 @@ function resolvePromise() {
 }
 
 resolvePromise();
+
+// var promiseHere = Promise.resolve("Succes");
+
+// promiseHere.then(value => {
+//   console.log(value);
+// });
