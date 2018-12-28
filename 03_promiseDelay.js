@@ -1,7 +1,7 @@
 function thirdFunction() {
   return Promise.resolve("Success").then(function(value) {
-    setTimeout(function() {
-      console.log("Here is the third success: ", value);
+    setTimeout(() => {
+      console.log(value);
     }, 1000);
   });
 }
